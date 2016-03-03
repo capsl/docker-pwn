@@ -1,14 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER capsl <c2h@c2h.se>
 
-# docker build -t pwn:latest .
-# ~/.bash_aliases:
-# alias pwn='docker run --privileged -ti --rm -u user -v ~/vmshare:/pwn -w /dope -p 2323:2323 pwn bash'
-# now put all your pwnzables in ~/vmshare && pwn to get a fresh shell
-#
-# edit ~/.gdbinit for pwndbg vs. gef
-# 
-
 # setup user
 RUN useradd -m user -s /bin/bash
 RUN echo "user ALL=(ALL) NOPASSWD: ALL">>/etc/sudoers

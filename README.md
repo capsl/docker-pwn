@@ -5,8 +5,7 @@ $ docker build -t pwn:latest .
 ```
 
 ```sh
-$ alias pwn='docker run --privileged -ti --rm -u user \
-  -v ~/vmshare:/pwn -w /pwn -p 2323:2323 pwn bash'
+$ alias pwn='docker run --privileged -ti --rm -u user -v ~/vmshare:/pwn -w /pwn -p 2323:2323 pwn bash'
 $ cp pwnable ~/vmshare && pwn
 user@pwn:/pwn$ socat TCP-LISTEN:2323,reuseaddr,fork EXEC:./pwnable
 ```

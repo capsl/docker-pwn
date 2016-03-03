@@ -21,7 +21,7 @@ $ echo AAAA | nc $(docker-machine ip) 2323
 * [Capstone 4](https://github.com/aquynh/capstone)
 * [radare2](https://github.com/radare/radare2)
 * [GDB gef](https://github.com/hugsy/gef)
-* [GDB pwndgb](https://github.com/zachriggle/pwndbg)
+* [GDB pwndbg](https://github.com/zachriggle/pwndbg)
 * [rp++](https://github.com/0vercl0k/rp)
 * [pwntools](https://github.com/Gallopsled/pwntools)
 * tmux, vim
